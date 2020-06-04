@@ -92,7 +92,7 @@ header p {
   width: 16rem;
   margin-bottom: 2rem;
   background-color: #c4c4c4;
-  border: 1px solid #bababa;
+  border: 2px solid #bababa;
   border-radius: 1rem;
   padding: 1rem;
 }
@@ -114,6 +114,14 @@ header p {
 
 .grade img {
   width: 24px;
+}
+
+.left {
+  flex-grow: 1;
+}
+
+.right {
+  flex-grow: 3;
 }
 
 /*# sourceMappingURL=style.css.map */
