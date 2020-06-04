@@ -21,136 +21,142 @@
 @mixin medium-max
   @media (max-width: 768px)
     @content
-    
+
 $malte: #eaeaea
 $font: 'Montserrat', sans-serif
 
-
 .h-100
-    height: 100% !important
+  height: 100% !important
 
 .w-100
-    width: 100%
+  width: 100%
 
 .d-flex
-    display: flex
+  display: flex
 
 .line
-    position: absolute
-    background: #fff
-    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 25%)
+  position: absolute
+  background: #fff
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 25%)
 
 .container
-    width: 100%
-    padding-left: 1rem
-    padding-right: 1rem
-    margin-left: auto
-    margin-right: auto
-    box-sizing: border-box
-    z-index: 100
-    @include small
-        max-width: 540px
-    @include medium
-        max-width: 720px
-    @include large
-        max-width: 960px
-    @include x-large
-        max-width: 1140px
+  width: 100%
+  padding-left: 1rem
+  padding-right: 1rem
+  margin-left: auto
+  margin-right: auto
+  box-sizing: border-box
+  z-index: 100
+  @include small
+    max-width: 540px
+  @include medium
+    max-width: 720px
+  @include large
+    max-width: 960px
+  @include x-large
+    max-width: 1140px
 
 body
-    flex-direction: column
-    flex-wrap: nowrap
-    font-family: $font
-    background-color: $malte
-    line-height: 1.5
+  flex-direction: column
+  flex-wrap: nowrap
+  font-family: $font
+  background-color: $malte
+  line-height: 1.5
 
 footer
-    margin-top: auto
-    p
-        text-align: center
+  margin-top: auto
+  padding-top: 2rem
+  min-height: 6rem
+  opacity: .6
+  p
+    text-align: center
 
 nav
-    height: 4rem
-    align-items: center
+  height: 4rem
+  align-items: center
+  padding-top: 1rem
 
 header
-    padding-top: 4rem
-    padding-bottom: 8rem 
-    height: 8rem
-    align-items: center
-    flex-direction: column
+  padding-top: 3rem
+  padding-bottom: 8rem
+  height: 8rem
+  align-items: center
+  flex-direction: column
 
-    @include small-max
-        padding-top: 2rem
+  @include small-max
+    padding-top: 2rem
 
-    h1
-        font-size: 4rem
-        font-weight: 800
+  h1
+    font-size: 4rem
+    font-weight: 800
 
-    h2
-        padding-top: 1rem
-        font-size: 1.4rem
+  h2
+    font-size: 1.4rem
 
 .burgare
-    background-color: #fff
-    background-image: url(../img/menu-black-18dp.svg)
-    background-repeat: no-repeat
-    background-size: 48px
-    border: none
-    width: 48px
-    height: 48px
+  background-color: #fff
+  background-image: url(../img/menu-black-18dp.svg)
+  background-repeat: no-repeat
+  background-size: 48px
+  background-position: center
+  border: none
+  width: 48px
+  height: 48px
+
+  &:focus
+    outline: none
 
 .card
-    width: 16rem
-    margin-bottom: 2rem
-    background-color: #c4c4c4
-    border: 2px solid #bababa
-    border-radius: 1rem
-    padding: 1rem
+  width: 16rem
+  margin-bottom: 2rem
+  background-color: #c4c4c4
+  border: 2px solid #bababa
+  border-radius: 1rem
+  padding: 1rem
 
-    h3
-        font-size: 1.4rem
-        font-weight: 600
-        padding: 1rem 0
+  h3
+    font-size: 1.4rem
+    font-weight: 600
+    padding: 1rem 0
 
-    &-header
-        align-items: center
-        justify-content: flex-start
+  &-header
+    align-items: center
+    justify-content: flex-start
 
-    &-portrait
-        width: 48px
-        height: 48px
-        border-radius: 100%
-        margin-right: 2rem 
+  &-portrait
+    width: 48px
+    height: 48px
+    border-radius: 100%
+    margin-right: 2rem
 
 .grade
-    
-    img
-        width: 24px
+
+  img
+    width: 24px
 
 .content
-    margin-top: 4rem
+  margin-top: 4rem
 
-    @include small-max
-        flex-direction: column
-        align-items: center
-        margin-top: 0
+  @include small-max
+    flex-direction: column
+    align-items: center
+    margin-top: 0
 
 .statement
-    margin-bottom: 2rem
-    h2
-        font-size: 2.4rem
-        font-weight: 600
+  margin-bottom: 2rem
+  h2
+    font-size: 2.4rem
+    font-weight: 600
 
 .contact
-    em
-        font-weight: 600
+  em
+    font-weight: 600
 
 .left
-    flex-grow: 1
+  flex-grow: 1
 
 .right
-    margin-left: 6rem
-    flex-grow: 3
-    @include small-max
-        margin-left: 0 
+  margin-left: 6rem
+  flex-grow: 3
+  @include small-max
+    margin-left: 0

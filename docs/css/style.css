@@ -56,6 +56,9 @@ body {
 
 footer {
   margin-top: auto;
+  padding-top: 2rem;
+  min-height: 6rem;
+  opacity: 0.6;
 }
 footer p {
   text-align: center;
@@ -64,10 +67,11 @@ footer p {
 nav {
   height: 4rem;
   align-items: center;
+  padding-top: 1rem;
 }
 
 header {
-  padding-top: 4rem;
+  padding-top: 3rem;
   padding-bottom: 8rem;
   height: 8rem;
   align-items: center;
@@ -83,7 +87,6 @@ header h1 {
   font-weight: 800;
 }
 header h2 {
-  padding-top: 1rem;
   font-size: 1.4rem;
 }
 
@@ -92,9 +95,13 @@ header h2 {
   background-image: url(../img/menu-black-18dp.svg);
   background-repeat: no-repeat;
   background-size: 48px;
+  background-position: center;
   border: none;
   width: 48px;
   height: 48px;
+}
+.burgare:focus {
+  outline: none;
 }
 
 .card {
