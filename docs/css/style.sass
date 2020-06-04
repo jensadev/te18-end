@@ -80,6 +80,9 @@ header
     align-items: center
     flex-direction: column
 
+    @include small-max
+        padding-top: 2rem
+
     h1
         font-size: 4rem
         font-weight: 800
@@ -128,6 +131,11 @@ header
 .content
     margin-top: 4rem
 
+    @include small-max
+        flex-direction: column
+        align-items: center
+        margin-top: 0
+
 .statement
     margin-bottom: 2rem
     h2
@@ -144,3 +152,5 @@ header
 .right
     margin-left: 6rem
     flex-grow: 3
+    @include small-max
+        margin-left: 0 
