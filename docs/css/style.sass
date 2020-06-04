@@ -38,7 +38,7 @@ $font: 'Montserrat', sans-serif
 .line
     position: absolute
     background: #fff
-    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 30%)
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 25%)
 
 .container
     width: 100%
@@ -62,9 +62,12 @@ body
     flex-wrap: nowrap
     font-family: $font
     background-color: $malte
+    line-height: 1.5
 
 footer
     margin-top: auto
+    p
+        text-align: center
 
 nav
     height: 4rem
@@ -122,10 +125,22 @@ header
     img
         width: 24px
 
+.content
+    margin-top: 4rem
+
 .statement
+    margin-bottom: 2rem
+    h2
+        font-size: 2.4rem
+        font-weight: 600
+
+.contact
+    em
+        font-weight: 600
 
 .left
     flex-grow: 1
 
 .right
+    margin-left: 6rem
     flex-grow: 3
